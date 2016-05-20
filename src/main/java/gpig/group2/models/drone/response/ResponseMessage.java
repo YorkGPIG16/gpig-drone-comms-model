@@ -14,7 +14,7 @@ public class ResponseMessage {
 
     @XmlElement(name="timestamp")
     private Date timestamp;
-    
+
     @XmlElement(name="response")
     List<ResponseMessage> response;
 }
