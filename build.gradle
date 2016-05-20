@@ -1,4 +1,4 @@
-group 'gpig.group2'
+group 'gpig.group2.models'
 
 apply plugin: 'java'
 apply plugin: 'maven-publish'
