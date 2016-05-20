@@ -3,6 +3,7 @@ package gpig.group2.models.drone.response;
 import gpig.group2.maps.geographic.Position;
 import gpig.group2.maps.geographic.position.Point;
 import gpig.group2.models.drone.response.response.ManDownResponse;
+import gpig.group2.models.drone.response.response.SurveillanceImageSet;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -15,7 +16,7 @@ import java.util.List;
 
 
 @XmlRootElement(name="response-data")
-@XmlSeeAlso({ManDownResponse.class})
+@XmlSeeAlso({ManDownResponse.class, SurveillanceImageSet.class})
 public class ResponseData {
 
     @XmlElement(name="origin")

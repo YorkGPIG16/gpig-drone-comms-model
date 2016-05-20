@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 /**
  * Created by james on 20/05/2016.
  */
-@XmlRootElement(name="man-down-response")
-public class ManDownResponse {
-
+@XmlRootElement(name="surveillance-image-set")
+public class SurveillanceImageSet {
+    
 }
