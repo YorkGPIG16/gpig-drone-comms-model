@@ -7,6 +7,7 @@ import gpig.group2.models.drone.request.task.GoToLocationTask;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSeeAlso;
+import java.util.Date;
 
 /**
  * Created by james on 20/05/2016.
@@ -15,6 +16,10 @@ import javax.xml.bind.annotation.XmlSeeAlso;
 @XmlRootElement(name="task")
 @XmlSeeAlso({GoToLocationTask.class, AerialSurveyTask.class})
 public abstract class Task  {
+
+    @XmlElement(name="timestamp")
+    private Date timestamp;
+
     @XmlElement(name="priority")
     protected Integer priority;
 

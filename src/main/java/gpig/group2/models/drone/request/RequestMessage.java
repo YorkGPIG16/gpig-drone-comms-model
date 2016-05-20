@@ -2,6 +2,7 @@ package gpig.group2.models.drone.request;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -10,6 +11,10 @@ import java.util.List;
 
 @XmlRootElement(name="request-message")
 public class RequestMessage {
+
+    @XmlElement(name="timestamp")
+    private Date timestamp;
+
     @XmlElement(name="task")
     public List<Task> tasks;
 }

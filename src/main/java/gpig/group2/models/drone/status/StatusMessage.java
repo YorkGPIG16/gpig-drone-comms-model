@@ -6,6 +6,7 @@ import gpig.group2.maps.geographic.position.Point;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -14,6 +15,9 @@ import java.util.List;
 
 @XmlRootElement(name="status-message")
 public class StatusMessage {
+
+    @XmlElement(name="timestamp")
+    private Date timestamp;
 
     @XmlElement(name="battery")
     private float battery;

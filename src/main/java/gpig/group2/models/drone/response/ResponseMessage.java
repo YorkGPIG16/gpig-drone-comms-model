@@ -2,6 +2,7 @@ package gpig.group2.models.drone.response;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -10,6 +11,10 @@ import java.util.List;
 
 @XmlRootElement(name="reponse-message")
 public class ResponseMessage {
+
+    @XmlElement(name="timestamp")
+    private Date timestamp;
+    
     @XmlElement(name="response")
     List<ResponseMessage> response;
 }
