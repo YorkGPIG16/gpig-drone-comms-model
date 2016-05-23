@@ -11,5 +11,13 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Image {
 
     @XmlAttribute(name="url")
-    public String url;
+    protected String url;
+
+    public String getUrlX() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
 }

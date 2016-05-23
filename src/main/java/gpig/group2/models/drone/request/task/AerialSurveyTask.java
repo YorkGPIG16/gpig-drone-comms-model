@@ -10,8 +10,16 @@ import javax.xml.bind.annotation.XmlRootElement;
  * Created by james on 20/05/2016.
  */
 
-@XmlRootElement(name="aerial-survey")
+@XmlRootElement(name="aerial_survey")
 public class AerialSurveyTask extends Task {
     @XmlElement(name="bounding-box")
-    private BoundingBox location;
+    protected BoundingBox location;
+
+    public BoundingBox getLocationX() {
+        return location;
+    }
+
+    public void setLocation(BoundingBox location) {
+        this.location = location;
+    }
 }

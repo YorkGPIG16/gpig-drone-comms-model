@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-    compile "gpig.group2:layer-services:1.0.24"
+    compile "gpig.group2:layer-services:1.0.31"
 }
 
 

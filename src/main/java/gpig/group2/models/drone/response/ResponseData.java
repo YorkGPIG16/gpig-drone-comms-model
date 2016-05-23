@@ -15,16 +15,40 @@ import java.util.List;
  */
 
 
-@XmlRootElement(name="response-data")
+@XmlRootElement(name="response_data")
 @XmlSeeAlso({ManDownResponse.class, SurveillanceImageSet.class})
 public class ResponseData {
 
     @XmlElement(name="timestamp")
-    private Date timestamp;
+    protected Date timestamp;
 
     @XmlElement(name="origin")
-    Point origin;
+    protected Point origin;
 
-    @XmlElement(name="images")
-    List<Image> images;
+    @XmlElement(name="image")
+    protected List<Image> images;
+
+    public Date getTimestampX() {
+        return timestamp;
+    }
+
+    public void setTimestamp(Date timestamp) {
+        this.timestamp = timestamp;
+    }
+
+    public Point getOriginX() {
+        return origin;
+    }
+
+    public void setOrigin(Point origin) {
+        this.origin = origin;
+    }
+
+    public List<Image> getImagesX() {
+        return images;
+    }
+
+    public void setImages(List<Image> images) {
+        this.images = images;
+    }
 }

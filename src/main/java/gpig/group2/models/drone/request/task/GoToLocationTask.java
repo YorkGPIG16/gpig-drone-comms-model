@@ -10,8 +10,16 @@ import javax.xml.bind.annotation.XmlRootElement;
  * Created by james on 20/05/2016.
  */
 
-@XmlRootElement(name="go-to-location")
+@XmlRootElement(name="go_to_location")
 public class GoToLocationTask extends Task {
     @XmlElement(name="location")
-    private Point point;
+    protected Point point;
+
+    public Point getPointX() {
+        return point;
+    }
+
+    public void setPoint(Point point) {
+        this.point = point;
+    }
 }

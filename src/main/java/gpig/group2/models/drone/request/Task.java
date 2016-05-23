@@ -18,9 +18,24 @@ import java.util.Date;
 public abstract class Task  {
 
     @XmlElement(name="timestamp")
-    private Date timestamp;
+    protected Date timestamp;
 
     @XmlElement(name="priority")
     protected Integer priority;
 
+    public Date getTimestampX() {
+        return timestamp;
+    }
+
+    public void setTimestamp(Date timestamp) {
+        this.timestamp = timestamp;
+    }
+
+    public Integer getPriorityX() {
+        return priority;
+    }
+
+    public void setPriority(Integer priority) {
+        this.priority = priority;
+    }
 }

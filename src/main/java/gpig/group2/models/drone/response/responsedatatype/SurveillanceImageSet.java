@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 /**
  * Created by james on 20/05/2016.
  */
-@XmlRootElement(name="surveillance-image-set")
+@XmlRootElement(name="surveillance_image_set")
 public class SurveillanceImageSet extends ResponseData {
     
 }

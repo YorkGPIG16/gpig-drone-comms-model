@@ -9,12 +9,28 @@ import java.util.List;
  * Created by james on 20/05/2016.
  */
 
-@XmlRootElement(name="request-message")
+@XmlRootElement(name="request_message")
 public class RequestMessage {
 
     @XmlElement(name="timestamp")
-    private Date timestamp;
+    protected Date timestamp;
 
     @XmlElement(name="task")
-    public List<Task> tasks;
+    protected List<Task> tasks;
+
+    public Date getTimestampX() {
+        return timestamp;
+    }
+
+    public void setTimestamp(Date timestamp) {
+        this.timestamp = timestamp;
+    }
+
+    public List<Task> getTasksX() {
+        return tasks;
+    }
+
+    public void setTasks(List<Task> tasks) {
+        this.tasks = tasks;
+    }
 }

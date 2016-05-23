@@ -9,12 +9,28 @@ import java.util.List;
  * Created by james on 20/05/2016.
  */
 
-@XmlRootElement(name="reponse-message")
+@XmlRootElement(name="reponse_message")
 public class ResponseMessage {
 
     @XmlElement(name="timestamp")
-    private Date timestamp;
+    protected Date timestamp;
 
     @XmlElement(name="response")
-    List<ResponseMessage> response;
+    protected List<ResponseData> response;
+
+    public Date getTimestampX() {
+        return timestamp;
+    }
+
+    public void setTimestamp(Date timestamp) {
+        this.timestamp = timestamp;
+    }
+
+    public List<ResponseData> getResponseX() {
+        return response;
+    }
+
+    public void setResponse(List<ResponseData> response) {
+        this.response = response;
+    }
 }
