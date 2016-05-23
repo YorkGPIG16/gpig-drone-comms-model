@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-    compile "gpig.group2:layer-services:1.0-SNAPSHOT"
+    compile "gpig.group2:layer-services:1.0.24"
 }
 
 
@@ -24,6 +24,12 @@ jar {
                 'Built-JDK': System.getProperty('java.version'),
                 'Built-Gradle': gradle.gradleVersion
     }
+}
+
+task(runSimple, dependsOn: 'classes' , type: JavaExec) {
+    main = 'gpig.group2.models.drone.XSDGenerator'
+    classpath = sourceSets.main.runtimeClasspath
+            args '/Users/james/status.xsd', '/Users/james/response.xsd', '/Users/james/request.xsd'
 }
 
 

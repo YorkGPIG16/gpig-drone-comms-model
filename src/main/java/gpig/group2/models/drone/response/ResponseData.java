@@ -1,6 +1,6 @@
 package gpig.group2.models.drone.response;
 
-import gpig.group2.maps.geographic.position.Point;
+import gpig.group2.maps.geographic.Point;
 import gpig.group2.models.drone.response.responsedatatype.ManDownResponse;
 import gpig.group2.models.drone.response.responsedatatype.SurveillanceImageSet;
 
@@ -21,5 +21,6 @@ public class ResponseData {
     @XmlElement(name="origin")
     Point origin;
 
+    @XmlElement(name="images")
     List<Image> images;
 }
