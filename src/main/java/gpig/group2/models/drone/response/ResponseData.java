@@ -1,9 +1,8 @@
 package gpig.group2.models.drone.response;
 
-import gpig.group2.maps.geographic.Position;
 import gpig.group2.maps.geographic.position.Point;
-import gpig.group2.models.drone.response.response.ManDownResponse;
-import gpig.group2.models.drone.response.response.SurveillanceImageSet;
+import gpig.group2.models.drone.response.responsedatatype.ManDownResponse;
+import gpig.group2.models.drone.response.responsedatatype.SurveillanceImageSet;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
