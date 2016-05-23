@@ -13,5 +13,5 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement(name="go-to-location")
 public class GoToLocationTask extends Task {
     @XmlElement(name="location")
-    private Point pont;
+    private Point point;
 }
