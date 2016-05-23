@@ -1,6 +1,7 @@
 package gpig.group2.models.drone.request.task;
 
 import gpig.group2.maps.geographic.Point;
+import gpig.group2.models.drone.request.Task;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -10,7 +11,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  */
 
 @XmlRootElement(name="go-to-location")
-public class GoToLocationTask {
+public class GoToLocationTask extends Task {
     @XmlElement(name="location")
     private Point pont;
 }
