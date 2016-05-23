@@ -15,9 +15,9 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
-      <library name="Gradle: gpig.group2:layer-services:1.0.30">
+      <library name="Gradle: gpig.group2:layer-services:1.0.31">
         <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/gpig.group2/layer-services/1.0.30/b8fddf44d75cab581190b50d84d97abf947e95f0/layer-services-1.0.30.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/gpig.group2/layer-services/1.0.31/105545d6832cd28256d0662891b407686dbf3fb1/layer-services-1.0.31.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
