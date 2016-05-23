@@ -1,18 +1,17 @@
 package gpig.group2.models.drone.status;
 
-import gpig.group2.maps.geographic.Position;
 import gpig.group2.maps.geographic.position.CoordinateList;
-import gpig.group2.maps.geographic.position.Point;
+import gpig.group2.maps.geographic.Point;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+
 import java.util.Date;
 import java.util.List;
 
 /**
  * Created by james on 20/05/2016.
  */
-
 @XmlRootElement(name="status-message")
 public class StatusMessage {
 

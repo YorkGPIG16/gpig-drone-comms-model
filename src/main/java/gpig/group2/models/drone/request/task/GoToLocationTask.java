@@ -1,6 +1,6 @@
 package gpig.group2.models.drone.request.task;
 
-import gpig.group2.maps.geographic.position.Point;
+import gpig.group2.maps.geographic.Point;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
