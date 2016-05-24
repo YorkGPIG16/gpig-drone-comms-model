@@ -10,5 +10,14 @@ import java.util.List;
 @XmlRootElement(name="drones")
 public class DroneStatusCollection {
     @XmlElement(name="drone")
-    List<DroneStatusCollection> collection;
+    protected List<DroneStatusCollection> collection;
+
+
+    public List<DroneStatusCollection> getCollectionX() {
+        return collection;
+    }
+
+    public void setCollection(List<DroneStatusCollection> collection) {
+        this.collection = collection;
+    }
 }
