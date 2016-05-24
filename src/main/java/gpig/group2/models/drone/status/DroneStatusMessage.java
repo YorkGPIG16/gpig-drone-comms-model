@@ -13,7 +13,10 @@ import java.util.List;
  * Created by james on 20/05/2016.
  */
 @XmlRootElement(name="status_message")
-public class StatusMessage {
+public class DroneStatusMessage {
+
+    @XmlElement(name="id")
+    protected Integer id;
 
     @XmlElement(name="timestamp")
     protected Date timestamp;
@@ -68,5 +71,13 @@ public class StatusMessage {
 
     public void setFailures(List<String> failures) {
         this.failures = failures;
+    }
+
+    public Integer getIdX() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }

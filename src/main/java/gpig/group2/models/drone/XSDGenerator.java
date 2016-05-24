@@ -2,7 +2,7 @@ package gpig.group2.models.drone;
 
 import gpig.group2.models.drone.request.RequestMessage;
 import gpig.group2.models.drone.response.ResponseMessage;
-import gpig.group2.models.drone.status.StatusMessage;
+import gpig.group2.models.drone.status.DroneStatusMessage;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -19,7 +19,7 @@ public class XSDGenerator {
     public static void main(final String[] args) throws JAXBException, IOException {
 
         {
-            JAXBContext jaxbContext = JAXBContext.newInstance(StatusMessage.class);
+            JAXBContext jaxbContext = JAXBContext.newInstance(DroneStatusMessage.class);
 
 
             jaxbContext.generateSchema(new SchemaOutputResolver() {

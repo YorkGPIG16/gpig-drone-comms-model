@@ -10,15 +10,11 @@ import gpig.group2.models.drone.request.task.GoToLocationTask;
 import gpig.group2.models.drone.response.Image;
 import gpig.group2.models.drone.response.ResponseData;
 import gpig.group2.models.drone.response.ResponseMessage;
-import gpig.group2.models.drone.status.StatusMessage;
+import gpig.group2.models.drone.status.DroneStatusMessage;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
-import javax.xml.bind.SchemaOutputResolver;
-import javax.xml.transform.Result;
-import javax.xml.transform.stream.StreamResult;
-import java.io.File;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.util.ArrayList;
@@ -32,12 +28,12 @@ public class XMLGenerator {
     public static void main(final String[] args) throws JAXBException, IOException {
 
         {
-            JAXBContext jaxbContext = JAXBContext.newInstance(StatusMessage.class);
+            JAXBContext jaxbContext = JAXBContext.newInstance(DroneStatusMessage.class);
             Marshaller m = jaxbContext.createMarshaller();
 
             StringWriter sw = new StringWriter();
 
-            StatusMessage sm = new StatusMessage();
+            DroneStatusMessage sm = new DroneStatusMessage();
             sm.setTimestamp(new Date());
 
             Point p = new Point(123,456);

@@ -1,8 +1,6 @@
 package gpig.group2.models.drone.tasks;
 
 import gpig.group2.models.drone.request.RequestMessage;
-import gpig.group2.models.drone.response.ResponseMessage;
-import gpig.group2.models.drone.status.StatusMessage;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;

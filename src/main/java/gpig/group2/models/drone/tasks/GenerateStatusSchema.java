@@ -1,6 +1,6 @@
 package gpig.group2.models.drone.tasks;
 
-import gpig.group2.models.drone.status.StatusMessage;
+import gpig.group2.models.drone.status.DroneStatusMessage;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -15,7 +15,7 @@ import java.io.IOException;
  */
 public class GenerateStatusSchema {
     public static void main(final String[] args) throws JAXBException, IOException {
-        JAXBContext jaxbContext = JAXBContext.newInstance(StatusMessage.class);
+        JAXBContext jaxbContext = JAXBContext.newInstance(DroneStatusMessage.class);
 
 
         jaxbContext.generateSchema(new SchemaOutputResolver() {
