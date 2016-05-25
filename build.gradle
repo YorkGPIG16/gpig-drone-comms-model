@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-    compile "gpig.group2:layer-services:1.1.34"
+    compile "gpig.group2:layer-services:1.1.36"
 }
 
 
@@ -32,23 +32,27 @@ task(runSimple, dependsOn: 'classes' , type: JavaExec) {
             args '/Users/james/status.xsd', '/Users/james/response.xsd', '/Users/james/request.xsd'
 }
 
-
-
 task sourcesJar(type: Jar) {
     classifier 'sources'
     from sourceSets.main.allSource
 }
 
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier 'javadoc'
+    from javadoc.destinationDir
+}
 
 artifacts {
     archives sourcesJar
+    archives javadocJar
 }
 
 publishing {
     publications {
         mavenJava(MavenPublication) {
             from components.java
-            Artifact sourcesJar
+            artifact sourcesJar
+            artifact javadocJar
 
             pom.withXml {
                 def root = asNode()

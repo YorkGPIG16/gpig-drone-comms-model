@@ -3,6 +3,7 @@ package gpig.group2.models.drone.request;
 import gpig.group2.maps.geographic.Position;
 import gpig.group2.models.drone.request.task.AerialSurveyTask;
 import gpig.group2.models.drone.request.task.GoToLocationTask;
+import javafx.beans.property.IntegerProperty;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -23,6 +24,9 @@ public abstract class Task  {
     @XmlElement(name="priority")
     protected Integer priority;
 
+    @XmlElement(name="id")
+    protected Integer id;
+
     public Date getTimestampX() {
         return timestamp;
     }
@@ -38,4 +42,13 @@ public abstract class Task  {
     public void setPriority(Integer priority) {
         this.priority = priority;
     }
+
+    public Integer getIdX() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
 }

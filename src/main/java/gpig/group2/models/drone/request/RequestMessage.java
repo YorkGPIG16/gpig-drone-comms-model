@@ -18,6 +18,8 @@ public class RequestMessage {
     @XmlElement(name="task")
     protected List<Task> tasks;
 
+
+
     public Date getTimestampX() {
         return timestamp;
     }

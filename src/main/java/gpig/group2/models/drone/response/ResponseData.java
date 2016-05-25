@@ -19,6 +19,11 @@ import java.util.List;
 @XmlSeeAlso({ManDownResponse.class, SurveillanceImageSet.class})
 public class ResponseData {
 
+
+
+    @XmlElement(name="task_id")
+    protected Integer taskId;
+
     @XmlElement(name="timestamp")
     protected Date timestamp;
 
@@ -50,5 +55,13 @@ public class ResponseData {
 
     public void setImages(List<Image> images) {
         this.images = images;
+    }
+
+    public Integer getTaskIdX() {
+        return taskId;
+    }
+
+    public void setTaskId(Integer taskId) {
+        this.taskId = taskId;
     }
 }
