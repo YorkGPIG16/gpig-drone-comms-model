@@ -11,7 +11,24 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement(name="building_occupancy_response")
 public class BuildingOccupancyResponse extends ResponseData {
 
+    public boolean isMultiStoryBuildingX() {
+        return isMultiStoryBuilding;
+    }
+
+    public void setMultiStoryBuilding(boolean multiStoryBuilding) {
+        isMultiStoryBuilding = multiStoryBuilding;
+    }
+
+    public Integer getEstimatedNumberOfPeopleX() {
+        return estimatedNumberOfPeople;
+    }
+
+    public void setEstimatedNumberOfPeople(Integer estimatedNumberOfPeople) {
+        this.estimatedNumberOfPeople = estimatedNumberOfPeople;
+    }
+
     @XmlAttribute(name="multistory")
+
     protected boolean isMultiStoryBuilding;
 
     @XmlAttribute(name="person_count")
