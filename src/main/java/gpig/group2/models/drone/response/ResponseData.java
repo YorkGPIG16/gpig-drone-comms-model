@@ -1,8 +1,7 @@
 package gpig.group2.models.drone.response;
 
 import gpig.group2.maps.geographic.Point;
-import gpig.group2.models.drone.response.responsedatatype.ManDownResponse;
-import gpig.group2.models.drone.response.responsedatatype.SurveillanceImageSet;
+import gpig.group2.models.drone.response.responsedatatype.*;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -16,7 +15,7 @@ import java.util.List;
 
 
 @XmlRootElement(name="response_data")
-@XmlSeeAlso({ManDownResponse.class, SurveillanceImageSet.class})
+@XmlSeeAlso({ManDownResponse.class, SurveillanceImageSet.class, Aborted.class, Completed.class, BuildingOccupancyResponse.class})
 public class ResponseData {
 
 
